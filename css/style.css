@@ -435,3 +435,14 @@
     padding-right: 0;
     border-right: none;
 }
+.ul{
+    text-align: justify;
+    font-size: 20px; 
+}
+.but{
+    color: white;
+    background-color: #06BBCC; 
+    font-size: 20px; border: #06BBCC;
+    padding-left: 200px;padding-right: 200px; 
+    padding-top: 20px; padding-bottom: 20px;
+}
