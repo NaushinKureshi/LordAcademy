@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                <button type="submit" class="btn btn-primary w-100 py-3"onclick="gotowhatsapp()">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -163,6 +163,25 @@
             </div>
         </div>
     </div>
+    <script>
+        function gotowhatsapp()
+        {
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            var url = "https://wa.me/+919824671663?text=" 
+            + "Name: " + name + "%0a"
+            + "Email: " + email + "%0a"
+            + "Subject: " + subject + "%0a"
+            + "Message: " + message;
+
+            window.open(url).focus();
+
+        }
+    </script>
     <!-- Contact End -->
 
 
